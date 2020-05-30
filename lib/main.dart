@@ -14,20 +14,43 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:AppBar(title: Text("Awesome App"),),
-      body: Center(
-        child:Container(
-          color: Colors.teal,
-          child: Text("Hii Flutter",),
-          padding: const EdgeInsets.all(10),
-          alignment: Alignment.center,
-          decoration: BoxDecoration(
-            color:Colors.red,
-            borderRadius: BorderRadius.circular(10),
-            gradient: LinearGradient(colors :[Colors.yellow,Colors.pink]),
+      body:Container(
+      color: Colors.black,
+      width: MediaQuery.of(context).size.width,
+      height: MediaQuery.of(context).size.height/2,
+      
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+          color: Colors.green,
+            width: 100,
+            height:100,
             
-            )
-          ),
-      )
+            padding: const EdgeInsets.all(10),
+            alignment: Alignment.center,
+            ),
+            Container(
+          color: Colors.yellow,
+            width: 100,
+            height:100,
+            
+            padding: const EdgeInsets.all(10),
+            alignment: Alignment.center,
+            ),
+            Container(
+          color: Colors.red,
+            width: 100,
+            height:100,
+            
+            padding: const EdgeInsets.all(10),
+            alignment: Alignment.center,
+            ),
+          ],
+        ),
+      ),
+      
     );
   }
 }
