@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
             UserAccountsDrawerHeader(
               accountName: Text("Yash Mehta"),
               accountEmail: Text("admin@yashymehta.com"),
-              currentAccountPicture: CircleAvatar(backgroundImage: NetworkImage('https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'),),
+              currentAccountPicture: CircleAvatar(backgroundImage: NetworkImage('https://avatars2.githubusercontent.com/u/57744045?s=460&u=64e12071dc46351e8c9d3af5a7672bba32dea316&v=4'),),
             ),
             ListTile(
               leading: Icon(Icons.person),
