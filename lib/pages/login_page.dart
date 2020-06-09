@@ -1,4 +1,5 @@
 import 'package:firstapp/bg-image.dart';
+import 'package:firstapp/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -9,7 +10,9 @@ class LoginPage extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: SingleChildScrollView(
-          child: Stack(children: [
+          child: Stack(
+            fit: StackFit.expand,
+              children: [
                             BgImage(),
                             Center(child: 
                             Card(child:Column(children: [
@@ -32,7 +35,9 @@ class LoginPage extends StatelessWidget {
                                       ],),
                                     ),
                                   ),
-                                  RaisedButton(onPressed: (){},
+                                  RaisedButton(onPressed: (){
+                                    Navigator.push(context,MaterialPageRoute(builder: (context)=>HomePage()));
+                                  },
                                     child: Text("Sign In"),
                                     color: Colors.blueAccent,
                                     )

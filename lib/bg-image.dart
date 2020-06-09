@@ -4,6 +4,8 @@ class BgImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Image.asset('assets/bg.jpg',
-                fit: BoxFit.contain);
+      color: Colors.black.withOpacity(0.7),   
+      
+      );
   }
 }
